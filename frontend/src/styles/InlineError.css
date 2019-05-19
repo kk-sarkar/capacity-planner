@@ -1,0 +1,8 @@
+.error {
+    margin: 10px 0;
+    color: #bb0826;
+}
+
+.error span {
+    margin: 0 5px;
+}

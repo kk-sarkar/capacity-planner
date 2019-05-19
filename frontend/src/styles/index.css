@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FAFAFA;
+	color: #555;
+	font: 14px/18px "Work Sans","Helvetica Neue",Verdana,Arial,sans-serif;
+}

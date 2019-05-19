@@ -1,0 +1,25 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+.btn-primary:disabled {
+  background-color: #d71e28;
+  border-color: #d71e28;
+  opacity: 0.7;
+}
+
+.btn-primary, .btn-primary:hover,
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    background-color: #d71e28;
+    border-color: #d71e28;
+    outline: none;
+    box-shadow: none;
+}

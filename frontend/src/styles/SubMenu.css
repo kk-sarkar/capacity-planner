@@ -1,0 +1,10 @@
+.submenu-items.nav-item.active {
+	color: #3B3331;
+	font-weight: bold;
+	background-color: #FFDC78;
+	border-bottom: 2px solid #787070;
+}
+
+.menu-name {
+	padding: 0 6px;
+}

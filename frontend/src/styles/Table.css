@@ -1,0 +1,38 @@
+.tabulator-col-content {
+	background-color: #F4F0ED;
+}
+
+.tabulator .tabulator-footer .tabulator-page.active {
+	color: #d71e28;
+	font-weight: bold;
+}
+
+.data-count {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0 0 0;
+}
+
+.above-table-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.download, .download:hover {
+    display: block;
+    width: 135px;
+    margin: 10px 0;
+    background: #5174b8;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download:hover {
+	background: #2655af;
+}
