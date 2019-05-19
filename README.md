@@ -3,7 +3,8 @@ Capacity Planner Webapp with Create React App and Spring Boot
 
 Clone the repository, download both front end and Spring boot dependencies, build the project, and run the application as follows:
 
-#Run the entire application, both front end and back end, in the Spring boot artifact:-
+## Run the entire application, both front end and back end, in the Spring boot artifact:-
+
 
 1. Using command line: Navigate to the project root and run the Maven command: 
 ```
@@ -22,7 +23,7 @@ $ java -jar target/capacity-planner-0.0.1-SNAPSHOT.jar
 
 Open your web browser, and navigate to http://localhost:8080.
 
-#Run the front end and back end separately:-
+## Run the front end and back end separately:-
 
 The steps mentioned earlier will can be followed to run the Spring boot back end.
 
