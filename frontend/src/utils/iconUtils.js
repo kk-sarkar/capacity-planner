@@ -11,7 +11,8 @@ import {
 		faChartArea,
 		faSearchPlus,
 		faChartLine,
-		faHashtag } from '@fortawesome/free-solid-svg-icons';
+		faHashtag,
+		faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faExclamationCircle);
 library.add(faChartBar);
@@ -24,3 +25,4 @@ library.add(faChartArea);
 library.add(faSearchPlus);
 library.add(faChartLine);
 library.add(faHashtag);
+library.add(faLightbulb);

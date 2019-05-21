@@ -1,0 +1,17 @@
+.sections {
+	margin: 15px;
+}
+
+.est-cost-table-container {
+	width: 740px;
+}
+
+h6 {
+	text-decoration: underline;
+}
+
+.cntr-flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

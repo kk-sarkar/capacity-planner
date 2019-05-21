@@ -24,19 +24,11 @@
 	padding: 0;
 }
 
-.table-container, .chart-container {
+.table-container {
 	padding: 5px;
 }
 
 .table-container {
-	
-}
-
-.chart-container {
-	
-}
-
-.radio-btn {
 	
 }
 
@@ -48,10 +40,13 @@
 	margin: 10px 0;
 }
 
-.spinner-border {
-	margin-right: 6px;
-}
-
 .btn-container {
 	margin: 30px 0 0 0;
+}
+
+.form-control {
+	color: #555 !important;
+    background-color: inherit !important;
+    border: 2px solid !important;
+    outline: none;
 }

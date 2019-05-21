@@ -1,0 +1,7 @@
+.chart-container {
+	padding: 10px;
+}
+
+.recharts-legend-wrapper {
+	position: relative !important;
+}

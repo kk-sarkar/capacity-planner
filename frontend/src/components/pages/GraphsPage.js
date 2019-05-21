@@ -12,7 +12,7 @@ class GraphsPage extends Component {
 
 	SubMenus = [
 		{ name: 'Burndown', url: '/graphs/burndown', component: BurndownPage, icon: 'chart-area' },
-		{ name: 'Skill Requirement', url: '/graphs/skillreq', component: SkillRequirementPage, icon: 'search-plus' },
+		{ name: 'Resource to Skill', url: '/graphs/skillreq', component: SkillRequirementPage, icon: 'search-plus' },
 		{ name: 'Capacity Map', url: '/graphs/capacitymap', component: CapacityMapPage, icon: 'chart-line' }
 	];
 
@@ -25,7 +25,7 @@ class GraphsPage extends Component {
 
 			  	{
 		    		this.SubMenus.map( 
-		    			(item, index) => <Route path={item.url} component={item.component}/>
+		    			(item, index) => <Route path={item.url} component={item.component} key={item.url}/>
 		    		)
 		    	}
 

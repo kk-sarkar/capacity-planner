@@ -13,7 +13,7 @@ class DashboardPage extends Component {
 	SubMenus = [
 		{ name: 'Utilization', url: '/dashboard/utilization', component: UtilizationPage, icon:'chart-bar' },
 		{ name: 'AU Wise Budgeting', url: '/dashboard/aubudgeting', component: AUBudgetingPage, icon:'money-check-alt' },
-		{ name: 'Cost of TCP', url: '/dashboard/costoftcp', component: CostOfTCPPage, icon:'file-invoice-dollar' }
+		{ name: 'Cost of TCP Activity', url: '/dashboard/costoftcp', component: CostOfTCPPage, icon:'file-invoice-dollar' }
 	];
 
 	render() {

@@ -1,0 +1,28 @@
+.graph-container {
+	margin: 15px 0;
+	padding: 0;
+}
+
+.table-container, .chart-container {
+	padding: 5px;
+}
+
+.table-container {
+	
+}
+
+.chart-container {
+	
+}
+
+.radio-btn {
+	
+}
+
+.form-check-input {
+	cursor: pointer;
+}
+
+.display-selector {
+	margin: 10px 0;
+}

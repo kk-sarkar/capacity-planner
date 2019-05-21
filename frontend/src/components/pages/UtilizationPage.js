@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { Button, Container, Row, Col, Form, Spinner } from 'react-bootstrap';
 import '../../styles/UtilizationPage.css';
 import Table from '../display/Table';
+import Select from '../display/Select';
 import StackedHorizontalBar from '../display/StackedHorizontalBar';
 import { utilization } from '../../services/dashboardServices';
+import { UtilizationTableConfig } from '../../constants/tableConfig';
+import { UtilizationChartConfig } from '../../constants/chartConfig';
 
 class UtilizationPage extends Component {
 
@@ -15,7 +18,9 @@ class UtilizationPage extends Component {
 			show : 'both',
 			data: [],
 			loading: false,
-			errors: ''
+			errors: '',
+			selectedStampCriteria: '2019-08-17',
+			selectedLOB: 'LOB1'
 		}
 	}
 
@@ -31,20 +36,33 @@ class UtilizationPage extends Component {
 
 	render() {
 
-		const { show, data, loading } = this.state;
+		const { show, data, loading, selectedStampCriteria, selectedLOB } = this.state;
+
+		const stampOptions = ['2019-08-17', '2019-09-18', '2019-07-06'];
+		const lobOptions = ['LOB1', 'LOB2', 'LOB3'];
 
 		return (
 			<div className="container-fluid mt-4">
 				<div className="search-criteria">
 					<div className="search-criterion">
-						<label className="search-labels">STAMP time</label>
-						<div>field</div>
+						<label className="search-labels">STAMP END DATE</label>
+						<div>
+							<Select 
+									options={stampOptions} 
+									selected={selectedStampCriteria}
+									onSelect={ selectedStampCriteria => this.setState( { selectedStampCriteria } )}/>
+						</div>
 					</div>
 					<div className="search-criterion">
 						<label className="search-labels">LOB</label>
-						<div>field</div>
+						<div>
+							<Select 
+									options={lobOptions} 
+									selected={selectedLOB}
+									onSelect={ selectedLOB => this.setState( { selectedLOB } )}/>
+						</div>
 					</div>
-					<div className="search-criterion">
+					<div className="search-criterion btn-container">
 						<Button variant="primary" className="submit-btn">Submit</Button>
 					</div>
 				</div>
@@ -71,12 +89,12 @@ class UtilizationPage extends Component {
 					    <Col 
 					    	className={`table-container ${show !== 'chart'? '' : 'd-none'}`} 
 					    	xs={12} md={show === 'table'? 12 : 6}>
-					    	<Table data={data} />
+					    	<Table data={data} config={UtilizationTableConfig}/>
 					    </Col>
 					    <Col 
 					    	className={`chart-container ${show !== 'table'? '' : 'd-none'}`} 
 					    	xs={12} md={show === 'table'? 12 : 6}>
-					    	<StackedHorizontalBar data={data} />
+					    	<StackedHorizontalBar data={data} config={UtilizationChartConfig}/>
 					    </Col>
 					</Row>
 				</Container>

@@ -25,7 +25,7 @@ class CorrectiveMeasuresPage extends Component {
 
 			  	{
 		    		this.SubMenus.map( 
-		    			(item, index) => <Route path={item.url} component={item.component}/>
+		    			(item, index) => <Route path={item.url} component={item.component} key={item.url}/>
 		    		)
 		    	}
 

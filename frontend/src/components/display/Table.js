@@ -3,7 +3,6 @@ import "react-tabulator/lib/styles.css";
 import "react-tabulator/css/bootstrap/tabulator_bootstrap.min.css";
 import { ReactTabulator } from "react-tabulator";
 import '../../styles/Table.css';
-import { UtilizationTableConfig } from '../../constants/tableConfig';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CSVLink } from "react-csv";
 
@@ -17,7 +16,7 @@ class Table extends Component {
 
 	render() {
 
-		const data = this.props.data || [];
+		const { data=[], config={}} = this.props;
 
 		return (
 			<div>
@@ -35,9 +34,9 @@ class Table extends Component {
 				</div>
 				<ReactTabulator
 		          ref={ref => (this.ref = ref)}
-		          columns={UtilizationTableConfig.columns}
+		          columns={config.columns}
 		          data={data}
-		          options={UtilizationTableConfig.options}
+		          options={config.options}
 		          data-custom-attr="test-custom-attribute"
 		          className="custom-css-class"
 		        />
